@@ -83,10 +83,63 @@ header, nav {
 	text-align: center;
 }
 /*Main styles*/
-main {
-	background-color: #cea36b;
-	max-width: 65%;
-	margin: auto;
+.container {
+	overflow-x: hidden;
 }
 
+.buffer1 {
+	min-width: 100vw;
+	min-height: 45vh;
+	background-image: url(http://image.masterart.com/tsmedia/LeSphinxLephoto/LeSphinx1122011T171311.tif?qlt=75&cell=2000,2000&cvt=jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-x: hidden;
+}
+
+.buffer2 {
+	min-width: 100vw;
+	min-height: 45vh;
+	background-image: url(https://shariaunveiled.files.wordpress.com/2016/06/poland-polish-hussars-1-resized.jpg?w=627&h=377);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-x: hidden;
+}
+
+/*Paragraphs*/
+.paragraph {
+	background-color: #fff;
+	min-width: 100%;
+	overflow-x: hidden;
+	position: relative;
+
+}
+
+.paragraph img {
+	display: block;
+	min-height: 50px;
+	max-height: 200px;
+
+
+
+}
+.paragraph a {
+	text-decoration: none;
+	display: block;
+	padding: 5px 30px;
+	background-color: #f2c85f;
+	border-radius: 5px;
+
+}
+
+.paragraph h2 {
+	
+}
+
+.paragraph p {
+	
+}
 
