@@ -16,6 +16,7 @@ header, nav {
 #header {
 	padding: 0px;
 	display: flex;
+	flex-flow: row;
 	justify-content: space-between;
 	align-content: stretch;
 	min-width: 100%;
@@ -111,17 +112,20 @@ header, nav {
 
 /*Paragraphs*/
 .paragraph {
-	background-color: #fff;
-	min-width: 100%;
+	background-color: #222;
+	color: #fff;
+	padding: 1em 3em;
+	max-width: 100%;
 	overflow-x: hidden;
 	position: relative;
-
+	
 }
 
 .paragraph img {
 	display: block;
 	min-height: 50px;
 	max-height: 200px;
+	min-width: 1fr;
 
 
 
@@ -132,6 +136,7 @@ header, nav {
 	padding: 5px 30px;
 	background-color: #f2c85f;
 	border-radius: 5px;
+	max-width: 1fr;
 
 }
 
@@ -141,5 +146,34 @@ header, nav {
 
 .paragraph p {
 	
+}
+
+/*Preview*/
+.preview {
+	background-color: rgba(51, 51, 51, 0.89);
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	padding: 3em;
+}
+
+.preview form {
+	display: flex;
+	flex-flow: column;
+	background-color: #222;
+	max-width: 15%;
+	padding: 20px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.preview #email {
+	height: 25px;
+	padding: 0 10px;
+	border-radius: 5px;
+}
+.preview #submit {
+	height: 25px;
+	border-radius: 5px;
 }
 
