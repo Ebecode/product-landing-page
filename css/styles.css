@@ -118,34 +118,36 @@ header, nav {
 	max-width: 100%;
 	overflow-x: hidden;
 	position: relative;
-	
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .paragraph img {
 	display: block;
 	min-height: 50px;
 	max-height: 200px;
-	min-width: 1fr;
-
-
+	margin: auto;
+	margin-bottom: 10px;
 
 }
 .paragraph a {
 	text-decoration: none;
 	display: block;
-	padding: 5px 30px;
+	padding: 5px 25px;
 	background-color: #f2c85f;
 	border-radius: 5px;
-	max-width: 1fr;
-
-}
-
-.paragraph h2 {
 	
 }
 
-.paragraph p {
-	
+.textbox, .buy {
+	padding: 2em;
+}
+.textbox {
+	max-width: 50%;
+	text-align: justify;
+}
+.buy {
+	max-width: 15%;
 }
 
 /*Preview*/
@@ -176,4 +178,39 @@ header, nav {
 	height: 25px;
 	border-radius: 5px;
 }
+.preview iframe {
+	display: block;
+}
 
+@media(max-width: 768px) {
+	#header {
+		position: static;
+		flex-flow: row wrap;
+	}
+	#nav-bar {
+		margin-right: 10px;
+		flex-flow: row wrap;
+	}
+	#nav-link {
+		padding: 5px 10px;
+		flex-shrink: 1;
+	}
+
+	.paragraph > * {
+		max-width: 70%;
+		margin: auto;
+	}
+
+	.preview {
+		flex-flow: column;
+		padding: 5px 0px;
+	}
+	.preview > * {
+		max-width: 100%;
+	}
+	#form {
+		max-width: 100%;
+	}
+	
+
+}
